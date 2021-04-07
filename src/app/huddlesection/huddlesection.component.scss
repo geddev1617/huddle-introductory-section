@@ -1,7 +1,10 @@
+li{
+    list-style-type: none;
+}
+
 .huddle_section{
     background-image: url(src/assets/bg-desktop.svg);
     background-color: hsl(257, 40%, 49%);
-    width: 100%;
 }
 
 .mock_up{
@@ -38,12 +41,13 @@
     color: #ffffff;
     font-weight: 400;
     text-align: center;
-    line-height: 1.5;
-    font-size: 0.875rem;
+    line-height: 1.3;
+    font-size: 1.3rem;
 }
 
-.sm_icons{
-    list-style-type: none;
+.sm-icon{
+    color: #ffffff;
+    filter: brightness(0) invert(1);
 }
 
 .cta_btn{
@@ -51,6 +55,7 @@
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 1.75em;
+    border: none;
     font-family: Raleway;
     color:  hsl(257, 40%, 49%);
     font-size: 0.875rem;
@@ -69,6 +74,18 @@
     text-decoration: none;
   }
 
+  .sm-icon{
+    width: 50px;
+    height: auto;
+    padding-left: 15px;
+}
+
+.social_media_icons{
+    margin-top: 20%;
+    display: block;
+    text-align: center;
+}
+
 .attribution{
     font-size: 0.9rem;
     letter-spacing: .12px;
@@ -79,14 +96,113 @@
 }
 
 .fm, .gt{
-    // color: hsl(321, 74%, 70%);
     color: turquoise;
 }
 
 @media screen and (max-width: 48em) and (min-width: 30em){
+    .intro_flex_container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
 
+    .mock_up{
+        max-width: 85%;
+        height: auto;
+    }
+
+    .intro_text{
+        font-family: Poppins;
+        color: #ffffff;
+        max-width: 75%;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+    
+    .intro_text1{
+        font-family: Open-Sans;
+        color: #ffffff;
+        max-width: 75%;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.3;
+        font-size: 1.3rem;
+    }
+
+    .intro_flex_item_{
+        padding-top: 8%;
+    }
+
+    .cta_btn{
+        font-size: 1rem;
+        padding: 1em 6em 1em 6em;
+      }
+
+.sm-icon{
+    width: 55px;
+    height: auto;
+    padding-left: 15px;
+}
+
+.social_media_icons{
+    margin-top: 10%;
+    display: block;
+    text-align: center;
+}
 }
 
 @media screen and (min-width: 64em){
+    .intro_flex_container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 6%;
+        gap: 4em;
+    }
+
+    .mock_up{
+        width: 700px;
+        height: auto;
+    }
+
+    .intro_text{
+        font-family: Poppins;
+        color: #ffffff;
+        max-width: 100%;
+        text-align: start;
+        font-weight: 700;
+        line-height: 1.6;
+        font-size: 2.8rem;
+    }
     
+    .intro_text1{
+        font-family: Open-Sans;
+        color: #ffffff;
+        max-width: 100%;
+        font-weight: 400;
+        text-align: start;
+        line-height: 1.3;
+        font-size: 1.3rem;
+    }
+
+    .intro_flex_item_{
+        padding-top: 2%;
+    }
+
+    .cta_btn{
+        font-size: 1rem;
+        padding: 1em 6em 1em 6em;
+      }
+
+      .sm-icon{
+        width: 60px;
+        height: auto;
+        padding-left: 15px;
+    }
+
+    .social_media_icons{
+        margin-top: 3%;
+        display: block;
+        text-align: end;
+    }
 }
